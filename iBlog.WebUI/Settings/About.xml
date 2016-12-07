@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="FirstLine" value="New Beginnings! New Challenges!" />
+  <add key="SecondLine" value="实践是行动的诠释 布道是经验的绽放" />
+  <add key="PhotoPath" value="/Content/Img/logo.png" />
+  <add key="ThirdLine" value="" />
+  <add key="Profile" value="没有做不到的 只有偷懒错过的" />
+  <add key="Wechat" value="olartan" />
+  <add key="QrcodePath" value="/Content/Img/cdc9ef0e269e3bfb.png" />
+  <add key="Email" value="olar.tan@gmail.com" />
+</appSettings>

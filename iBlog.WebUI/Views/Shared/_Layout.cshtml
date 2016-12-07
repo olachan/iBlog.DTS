@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="keywords" content="Blog" />
+    <meta name="description" content="Ola's Blog'" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        ::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        ::-webkit-scrollbar-button {
+          width: 0px;
+          height: 0px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #e1e1e1;
+          border: 0px none #ffffff;
+          border-radius: 50px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb:active {
+          background: #000000;
+        }
+        ::-webkit-scrollbar-track {
+          background: #666666;
+          border: 0px none #ffffff;
+          border-radius: 50px;
+        }
+        ::-webkit-scrollbar-track:hover {
+          background: #666666;
+        }
+        ::-webkit-scrollbar-track:active {
+          background: #333333;
+        }
+        ::-webkit-scrollbar-corner {
+          background: transparent;
+        }
+    </style>
+</head>
+<body class="fuelux">
+
+    @if (Request.Url.PathAndQuery == "/")
+    {
+        @Styles.Render("~/Content/loading")
+        <div class="home-loading" id="home-loading">
+            <div class="loading-con" id="loading-con" style="display:none;">
+                <div class="loading-circle"></div>
+                <script>
+                    var home_loading_begin = new Date();
+                    document.body.style.overflow = "hidden";
+                    function imgLoad() {
+                        document.getElementById("home-loading").style.background = "#f3f3f4";
+                        document.getElementById("loading-con").style.display = "block";
+                    }
+                </script>
+                <img id="loadingImg" alt="loading" src="@Settings.Config.LogoPath" onload="imgLoad();">
+            </div>
+        </div>
+    }
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">
+                    <img src="@Settings.Config.LogoPath">
+                    <span>@Settings.Config.SiteName</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav my-nav-pills navbar-right">
+                    <li><a href="/blog/category"><i class="fa fa-file-text-o fa-fw"></i> 博客</a></li>
+                    @if (Settings.Config.ShowGuestbook)
+                    {
+                        <li><a href="/guestbook"><i class="fa fa-edit fa-fw"></i> 留言</a></li>
+                    }
+                    <li><a href="/about"><i class="fa fa-user fa-fw"></i> 关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    @if (Settings.Config.EnableStatistics)
+    {
+        <!--百度统计代码-->
+        <script>
+
+        </script>
+    }
+</body>
+</html>

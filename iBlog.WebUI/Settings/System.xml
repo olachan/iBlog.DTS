@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="SiteName" value="Ola's Blog" />
+  <add key="SiteDomain" value="chenzheng.me" />
+  <add key="RecordNo" value="沪ICP备15000897号-2" />
+  <add key="LogoPath" value="/Content/Img/logo.png" />
+  <add key="PageSize" value="10" />
+  <add key="ShowMenu" value="True" />
+  <add key="CacheExpired" value="60" />
+  <add key="TranslateKey" value="" />
+  <add key="EnableStatistics" value="True" />
+  <add key="StatisticsId" value="" />
+  <add key="EnableShare" value="True" />
+  <add key="JiaThisId" value="" />
+  <add key="ShowComments" value="True" />
+  <add key="ChangyanId" value="" />
+  <add key="ChangyanConf" value="" />
+  <add key="ShowGuestbook" value="True" />
+  <add key="YouyanId" value="" />
+</appSettings>
