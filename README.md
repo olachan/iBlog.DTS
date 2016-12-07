@@ -1,13 +1,11 @@
-<<<<<<< HEAD
-# iBlog
+
+## iBlog
 美观大方、功能全面的个人博客系统。  
-（基于 Node.js 的 iBlog 点击[这里](https://github.com/eshengsky/iBlog2/)）
+（基于 iBlog 点击[这里](https://github.com/eshengsky/iBlog/)）
 
 ## 功能模块
 * **博客**  
 展示发布的文章或外部链接。  
-* **留言**  
-供访问者留言。
 * **关于**  
 一个简约现代的个人简介页面。
 * **后台管理**  
@@ -19,11 +17,14 @@
 * 持久化 [MongoDB](https://www.mongodb.org/)
 * 缓存 [Redis](http://redis.io/)
 
+## 优化
+* 文章别名随机生成6位长度字符串(数字字母组成)
+* 新增文章关键字自动提取功能
+
 ## 页面预览
 * **前台预览**  
-查看[我的博客](http://www.skysun.name)
-* **后台管理预览**  
-![image](https://raw.githubusercontent.com/eshengsky/iBlog/master/iBlog.WebUI/Content/Img/newarticle.png)
+查看[我的博客](http://chenzheng.me)
+
 
 ## 快速开始
 #### 准备条件  
@@ -39,13 +40,13 @@ Redis的配置信息：
 `<add key="UserName" value="admin" />`    
 `<add key="PwdMd5" value="e10adc3949ba59abbe56e057f20f883e" />`  
 在"后台管理-系统设置"页面中，可以配置其它参数。  
-#### Enjoy it! :smile:
+
  
 
 ## 许可协议
 基于[GPL](https://github.com/eshengsky/iBlog/blob/master/LICENSE)开源许可协议。
 
 =======
-# iBlog.DTS
+## iBlog.DTS
 iBlog.DTS按分类备份Cnblogs随便到iBlog个人博客
->>>>>>> origin/master
+
