@@ -29,8 +29,7 @@
 ## 快速开始
 #### 准备条件  
 在Windows上安装[IIS](http://www.iis.net/)、[MongoDB](https://www.mongodb.org/)、[Redis](https://github.com/MSOpenTech/redis/releases)。
-#### 发布站点
-使用Release模式编译iBlog解决方案，将iBlog.WebUI作为网站目录发布到IIS。
+
 #### 参数配置
 在iBlog.WebUI下的web.config中，查找并修改MongoDB连接信息：  
 `<add name="MongoDB" connectionString="mongodb://localhost:27017/iBlog" />`  
