@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # iBlog
 美观大方、功能全面的个人博客系统。  
 （基于 Node.js 的 iBlog 点击[这里](https://github.com/eshengsky/iBlog2/)）
@@ -44,3 +45,7 @@ Redis的配置信息：
 ## 许可协议
 基于[GPL](https://github.com/eshengsky/iBlog/blob/master/LICENSE)开源许可协议。
 
+=======
+# iBlog.DTS
+iBlog.DTS按分类备份Cnblogs随便到iBlog个人博客
+>>>>>>> origin/master
