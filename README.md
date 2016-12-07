@@ -41,12 +41,13 @@ Redis的配置信息：
 `<add key="PwdMd5" value="e10adc3949ba59abbe56e057f20f883e" />`  
 在"后台管理-系统设置"页面中，可以配置其它参数。  
 
- 
+
+## iBlog.DTS
+iBlog.DTS按分类备份Cnblogs随便到iBlog个人博客
+
+## Analyser & Segmenter
+[jieba.NET](https://github.com/anderscui/jieba.NET)集成
 
 ## 许可协议
 基于[GPL](https://github.com/eshengsky/iBlog/blob/master/LICENSE)开源许可协议。
-
-=======
-## iBlog.DTS
-iBlog.DTS按分类备份Cnblogs随便到iBlog个人博客
 
