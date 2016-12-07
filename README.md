@@ -42,7 +42,7 @@ Redis的配置信息：
 
 
 ## iBlog.DTS
-iBlog.DTS按分类备份Cnblogs随便到iBlog个人博客
+iBlog.DTS按分类备份Cnblogs随笔到iBlog个人博客
 
 ## Analyser & Segmenter
 [jieba.NET](https://github.com/anderscui/jieba.NET)集成
